@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Survey Form</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="fname">Father Name</label>
+                <input id="fname"name="fname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Mname">Mother Name</label>
+                <input id="Mname"name="Mname" type="text">
+                <div class="error"></div>
+            </div>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male">
+                    Female <input type="radio" name="gender" id="female">
+                    Other <input type="radio" name="gender" id="other">
+                </p>
+            </fieldset>
+            <div class="input-control">
+                <label for="date">Date of Birth</label>
+                <input id="date" name="date" type="date">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter your address"></textarea>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="number">Contact No</label>
+                <input id="number" name="number" type="number">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="feedback">Feedback</label>
+                <input id="feedback" name="feedback" type="text">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
